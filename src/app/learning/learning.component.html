@@ -1,0 +1,12 @@
+<p>
+
+<input type="text"
+	placeholder="Skriv ditt namn"
+	(keyup)="nameChange($event)"/>
+Välkommen {{ name }}!
+
+</p>
+<p [className]="darkMode ? 'darkMode' : ''">
+	Dark mode on: {{ darkMode }} <br />
+	<button (click)="toggleDarkMode()">{{ darkMode ? 'On' : 'Off' }}</button>
+</p>

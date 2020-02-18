@@ -1,6 +1,32 @@
 <h1> {{ title }} </h1>
+<app-learning></app-learning>
+
 <div>
 	The best icecream flavor is {{ flavor }}. At least {{ optimumAmount }} kulor.
 </div>
 <button (click)="makeItStrawberry()">Make it strawberry</button>
 <button (click)="restoreChocolate()">Restore order</button>
+
+<div>
+	<input type="text" value=""
+		(keyup)="onKeyUp($event)">
+	<br />
+	You typed: {{ echo }}
+</div>
+<hr />
+<div>
+	<input type="text"
+		[(ngModel)]="echo2" />
+	<br />
+	You typed: {{ echo2 }}
+	<br/>
+	<button (click)="reverseEcho()">Reverse!</button>
+</div>
+
+
+
+
+
+
+
+<!--  -->
